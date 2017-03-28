@@ -4,24 +4,23 @@
   <head>
     <title>Get Yer Waffles</title>
   </head>
+    <button onclick="serveMeWaffles()">Serve Some Waffles</button>
+  </br>
     <img id="random-waffles" />
 
-    <fb:like href="https://developers.facebook.com/" width="450" height="80" />
-
-    <meta property="og:title" content="Fresh Waffles"/>
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://jsaldrich1.github.io/wafflebot/" />
-    <meta property="og:image" content=document.getElementById("random-waffled").src= "pics/1.png" />
-    <meta property="og:site_name" content="WaffleMoose"/>
-    <meta property="og:description" content="Serving up fresh Waffles, all day every day!"/>
-
     <script>
-    window.onload = function newWaffle() {
+    function serveMeWaffles() {
       var waffleMessage = getNumber(1, 34);
       function getNumber( min, max ) {
         return Math.floor( Math.random() * ( max - min + 1 )) + min;
       }
-      document.getElementById("random-waffles").src= "pics/" + waffleMessage + ".png";
+      document.getElementById("random-waffles").src = "pics/" + waffleMessage + ".png";
     };
+
+    window.onload = function firstWaffle() {
+      serveMeWaffles();
+    };
+
+    document.getElementById("serveWaffleButton").addEventListener("click", newWaffle());
     </script>
 </html>

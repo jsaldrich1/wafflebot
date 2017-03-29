@@ -3,10 +3,21 @@
       xmlns:fb="https://www.facebook.com/2008/fbml">
   <head>
     <title>Get Yer Waffles</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
   </head>
-    <button onclick="serveMeWaffles()">Serve Some Waffles</button>
-  </br>
-    <img id="random-waffles" />
+
+    <div id="header">
+      <p id="headerText">Serving Up Fresh Waffles</p>
+    </div>
+
+    <div id="imageContainer">
+      <img id="random-waffles" onclick="serveMeWaffles()" />
+    </div>
+
+    <div id="buttonNewWaffle">
+      <a href="#" id="buttonText" onclick="serveMeWaffles()">Serve Some Waffles</a>
+    </div>
 
     <script>
     function serveMeWaffles() {

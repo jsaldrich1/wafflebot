@@ -16,11 +16,12 @@ header {
   font-family: $major-font;
   color: $text-color;
   text-align: center;
+  border: 1px solid red;
 }
 
 #imageContainer {
   text-align: center;
-  animation: bounceInUp 0.4s;
+  animation: bounceInUp 0.6s;
 }
 
 #random-waffles {

@@ -11,8 +11,8 @@ body {
   background-color: $major-green;
 }
 
-#header {
-  font-size: 72px;
+header {
+  font-size: 3em;
   font-family: $major-font;
   color: $text-color;
   text-align: center;
@@ -20,15 +20,54 @@ body {
 
 #imageContainer {
   text-align: center;
+  animation: bounceInUp 0.4s;
 }
 
 #random-waffles {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#buttonNewWaffle {
+.buttonNewWaffle {
   font-family: $minor-font;
   font-size: 30px;
   color: $text-color;
   text-align: center;
+}
+
+.toaster {
+  padding-top: 400px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
 }

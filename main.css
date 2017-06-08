@@ -2,42 +2,30 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F6FFED;
-  overflow: hidden; }
+  background-color: #F6FFED; }
 
 header {
   font-size: 3em;
-  padding: 0;
   font-family: "Quicksand", sans-serif;
-  color: rgba(42, 8, 3, 0.8);
-  text-align: center;
-  border: 1px solid red; }
-
-#imageContainer {
-  width: auto;
-  position: relative; }
-
-.insideToaster {
-  margin: 0 auto;
-  border: 4px solid pink;
-  position: absolute; }
-
-#randomWaffles {
-  max-width: 70%;
-  margin: 0 auto;
-  padding-left: 80px;
-  animation: bounceInUp 0.6s; }
-
-.buttonNewWaffle {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
   color: rgba(42, 8, 3, 0.8);
   text-align: center; }
 
+.everything {
+  width: auto; }
+
+.pictureToast {
+  border: 4px solid pink;
+  margin: 0 auto;
+  padding: 0; }
+
+#randomWaffles {
+  max-width: 100%;
+  margin: 0 auto;
+  animation: bounceInUp 0.6s; }
+
 .toaster {
   width: 70%;
-  margin: 0 auto;
-  padding-top: 400px; }
+  margin: 0 auto; }
 
 @keyframes bounceInUp {
   from, 60%, 75%, 90%, to {

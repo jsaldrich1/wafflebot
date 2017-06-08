@@ -9,7 +9,7 @@ function serveMeWaffles(){
 $(document).ready(function() {
   serveMeWaffles();
 
-  $("#randomWaffles").click(function() {
+  $(".toaster").click(function() {
     serveMeWaffles();
   });
 });

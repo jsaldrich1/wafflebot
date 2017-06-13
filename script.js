@@ -13,3 +13,5 @@ $(document).ready(function() {
     serveMeWaffles();
   });
 });
+
+// .pictureToast({ top: '-=100px' }, 600, 'easeOutElastic', function ())

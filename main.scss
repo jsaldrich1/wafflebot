@@ -10,7 +10,6 @@ body {
   padding: 0;
   background-color: $major-green;
   overflow: hidden;
-  display: grid;
 }
 
 header {
@@ -23,33 +22,30 @@ header {
 .everything {
   width: auto;
   grid-template-columns: auto 30% 30% auto;
+  grid-template-rows: 10% 30% 10% auto;
+  display: grid;
+  position: relative;
 }
 
 .pictureToast {
   position: absolute;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 #randomWaffles {
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation: bounceInUp 0.6s;
 }
 
 .toaster {
-  // width: 70%;
-  // margin: 0 auto;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  z-index: 999;
-  position: absolute;
+  grid-column: 2 / 4;
+  position: relative;
   padding-top: 400px;
 }
 
 @keyframes bounceInUp {
   from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0,1,.06,1);
-    // animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
   from {

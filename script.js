@@ -7,11 +7,19 @@ function serveMeWaffles(){
 };
 
 $(document).ready(function() {
-  serveMeWaffles();
+  // serveMeWaffles();
+  var isToasterLoaded = true;
 
   $(".toaster").click(function() {
-    // serveMeWaffles();
-    $(".pictureToast").animate({top: '-800px'}, 200);
+    if (isToasterLoaded) {
+      serveMeWaffles();
+      $(".pictureToast").animate({top: '-800px'}, 200);
+      isToasterLoaded = false;
+    } else {
+      $(".pictureToast").animate({top: '800px'}, 200);
+      isToasterLoaded = true;
+    };
+
   });
 });
 

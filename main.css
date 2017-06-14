@@ -14,17 +14,14 @@ header {
 .everything {
   width: auto;
   grid-template-columns: auto 30% 30% auto;
-  grid-template-rows: 10% 30% 10% auto;
+  grid-template-rows: 1% 10% 10%;
   display: grid;
   position: relative; }
 
 .pictureToast {
   position: absolute;
   grid-column: 2 / 3;
-  grid-row: 1 / 2; }
-
-#randomWaffles {
-  animation: bounceInUp 0.6s; }
+  grid-row: 2 / 3; }
 
 .toaster {
   grid-column: 2 / 4;

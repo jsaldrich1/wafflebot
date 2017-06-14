@@ -10,8 +10,9 @@ $(document).ready(function() {
   serveMeWaffles();
 
   $(".toaster").click(function() {
-    serveMeWaffles();
+    // serveMeWaffles();
+    $(".pictureToast").animate({top: '-800px'}, 200);
   });
 });
 
-// .pictureToast({ top: '-=100px' }, 600, 'easeOutElastic', function ())
+// $randomWaffles({ top: '-=100px' }, 600, 'easeOutElastic', function ())

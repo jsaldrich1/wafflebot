@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F6FFED; }
+  background-color: #F6FFED;
+  overflow: hidden; }
 
 header {
   font-size: 3em;
@@ -23,11 +24,10 @@ header {
   z-index: -1; }
 
 #randomWaffles {
-  width: 100%;
-  border: 1px solid red; }
+  width: 100%; }
 
 .coverUp {
-  background-color: rgba(25, 25, 25, 0.5);
+  background-color: #F6FFED;
   height: 100%;
   width: 100%;
   grid-row: 3 / 6;

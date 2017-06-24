@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $major-green;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 header {
@@ -36,12 +36,12 @@ header {
 
 #randomWaffles {
   width: 100%;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .coverUp {
-  background-color: rgba(25, 25, 25, 0.5);
-  // background-color: $major-green;
+  // background-color: rgba(25, 25, 25, 0.5);
+  background-color: $major-green;
   height: 100%;
   width: 100%;
   grid-row: 3 / 6;

@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $major-green;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 header {
@@ -21,33 +21,39 @@ header {
 
 .everything {
   width: auto;
-  grid-template-columns: auto 400px 400px auto;
-  grid-template-rows: auto 200px 400px auto;
   display: grid;
+  grid-template-columns: 1fr 25px 3fr 25px 1fr;
+  grid-template-rows: 1fr 25px 1fr 25px 1fr;
   position: relative;
 }
 
 .pictureToast {
   position: absolute;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  // max-width: 400px;
   z-index: -1;
+}
+
+#randomWaffles {
+  width: 100%;
+  border: 1px solid red;
 }
 
 .coverUp {
-  background-color: $major-green;
+  background-color: rgba(25, 25, 25, 0.5);
+  // background-color: $major-green;
   height: 100%;
   width: 100%;
-  grid-row: 2 / 4;
+  grid-row: 3 / 6;
   position: absolute;
   z-index: -1;
-  // border: 1px solid red;
 }
 
 .toaster {
-  grid-column: 2 / 4;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
   position: relative;
-  padding-top: 400px;
+  // padding-top: 400px;
 }
 
 @keyframes bounceInUp {

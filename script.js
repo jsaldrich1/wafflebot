@@ -13,7 +13,7 @@ $(document).ready(function() {
   $(".toaster").click(function() {
     if (isToasterLoaded) {
       serveMeWaffles();
-      $(".pictureToast").animate({top: '-800px'}, 200);
+      $(".pictureToast").animate({top: '0px'}, 200);
       isToasterLoaded = false;
     } else {
       $(".pictureToast").animate({top: '800px'}, 200);

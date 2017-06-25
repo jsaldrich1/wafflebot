@@ -23,7 +23,9 @@ header {
 }
 
 .everything {
+  margin: 0 auto;
   width: auto;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 25px .2fr 1fr .2fr 25px 1fr;
   grid-template-rows: 1fr 25px 1fr 25px 3fr;

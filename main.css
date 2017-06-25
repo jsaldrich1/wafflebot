@@ -9,18 +9,22 @@ header {
   font-size: 3em;
   font-family: "Quicksand", sans-serif;
   color: rgba(42, 8, 3, 0.8);
-  text-align: center; }
+  text-align: center;
+  grid-column: 1 / 8;
+  grid-row: 5;
+  z-index: 99; }
 
 .everything {
   width: auto;
   display: grid;
-  grid-template-columns: 1fr 25px 3fr 25px 1fr;
-  grid-template-rows: 1fr 25px 1fr 25px 1fr;
+  grid-template-columns: 1fr 25px .2fr 1fr .2fr 25px 1fr;
+  grid-template-rows: 1fr 25px 1fr 25px 3fr;
   position: relative; }
 
 .pictureToast {
   position: absolute;
-  grid-column: 3 / 4;
+  grid-column: 4 / 5;
+  margin: 0 auto;
   z-index: -1; }
 
 #randomWaffles {
@@ -35,7 +39,7 @@ header {
   z-index: -1; }
 
 .toaster {
-  grid-column: 3 / 4;
+  grid-column: 3 / 7;
   grid-row: 3 / 4;
   position: relative; }
 

@@ -27,6 +27,7 @@ header {
   position: absolute;
   grid-column: 4 / 5;
   margin: 0 auto;
+  width: 100%;
   z-index: -1; }
 
 #randomWaffles {

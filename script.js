@@ -12,9 +12,9 @@ $(document).ready(function() {
 
   $(".toaster").click(function() {
     if (isToasterLoaded) {
-      serveMeWaffles();
       $(".pictureToast").animate({top: '0px'}, 200);
       isToasterLoaded = false;
+      serveMeWaffles();
     } else {
       $(".pictureToast").animate({top: '800px'}, 200);
       isToasterLoaded = true;

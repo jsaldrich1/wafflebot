@@ -27,14 +27,15 @@ header {
   width: auto;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 25px .2fr 1fr .2fr 25px 1fr;
+  // grid-template-columns: 1fr 25px .2fr 1fr .2fr 25px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 25px 1fr 25px 3fr;
   position: relative;
 }
 
 .pictureToast {
   position: absolute;
-  grid-column: 4 / 5;
+  grid-column: 3 / 7;
   margin: 0 auto;
   width: 100%;
   z-index: -1;
@@ -55,7 +56,7 @@ header {
 }
 
 .toaster {
-  grid-column: 3 / 7;
+  grid-column: 2 / 8;
   grid-row: 3 / 4;
   position: relative;
   // padding-top: 400px;

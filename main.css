@@ -2,16 +2,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F6FFED;
-  overflow: hidden; }
+  background-color: #F6FFED; }
 
 header {
   font-size: 3em;
   font-family: "Quicksand", sans-serif;
   color: rgba(42, 8, 3, 0.8);
   text-align: center;
-  grid-column: 1 / 8;
-  grid-row: 5;
+  grid-column: 1 / 9;
   z-index: 99; }
 
 .everything {
@@ -45,23 +43,5 @@ header {
   grid-column: 2 / 8;
   grid-row: 3 / 4;
   position: relative; }
-
-@keyframes bounceInUp {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0, 1, 0.06, 1); }
-  from {
-    opacity: 0;
-    transform: translate3d(0, 3000px, 0); }
-  60% {
-    opacity: 1;
-    transform: translate3d(0, -20px, 0); }
-  75% {
-    transform: translate3d(0, 10px, 0); }
-  90% {
-    transform: translate3d(0, -5px, 0); }
-  to {
-    transform: translate3d(0, 0, 0); } }
-.bounceInUp {
-  animation-name: bounceInUp; }
 
 /*# sourceMappingURL=main.css.map */

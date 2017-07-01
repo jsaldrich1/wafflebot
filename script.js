@@ -8,17 +8,17 @@ function serveMeWaffles(){
 };
 
 $(document).ready(function() {
-  // serveMeWaffles();
-  var isToasterLoaded = false;
+  var isToasterLoaded = true;
+  serveMeWaffles();
 
   $(".toaster").click(function() {
     if (isToasterLoaded) {
-      $(".pictureToast").position({top: '800px'});
-      $(".pictureToast").animate({top: '0px'}, 200);
+      // $(".pictureToast").position({top: '800px'});
+      $(".pictureToast").animate({top: '-500px'}, 200);
       isToasterLoaded = false;
       serveMeWaffles();
     } else {
-      $(".pictureToast").animate({top: '800px'}, 200);
+      $(".pictureToast").animate({top: '0px'}, 200);
       isToasterLoaded = true;
     };
   });

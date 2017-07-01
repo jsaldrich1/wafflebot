@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F6FFED; }
+  background-color: #F6FFED;
+  overflow: hidden; }
 
 header {
   font-size: 3em;

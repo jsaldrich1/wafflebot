@@ -14,7 +14,7 @@ body {
 .everything {
   margin: 0 auto;
   width: auto;
-  max-width: 1200px;
+  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 25px 1fr 25px 1fr 25px 3fr;
@@ -24,7 +24,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: -1;
-  bottom: -6px;
+  bottom: -15px;
   margin: 0; }
 
 #randomWaffles {

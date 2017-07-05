@@ -8,13 +8,13 @@ function serveMeWaffles(){
 };
 
 $(document).ready(function() {
-  var isToasterLoaded = false;
+  var isToasterLoaded = true;
   $(".pictureToast").animate({bottom:'-800px'}, 0);
   serveMeWaffles();
 
   $(".toaster").click(function() {
     if (isToasterLoaded) {
-      $(".pictureToast").animate({bottom: '-6px'}, 200);
+      $(".pictureToast").animate({bottom: '-15px'}, 200);
       isToasterLoaded = false;
       serveMeWaffles();
     } else {

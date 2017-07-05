@@ -9,16 +9,16 @@ function serveMeWaffles(){
 
 $(document).ready(function() {
   var isToasterLoaded = false;
-  $(".pictureToast").animate({top:'800px'}, 0);
+  $(".pictureToast").animate({bottom:'-800px'}, 0);
   serveMeWaffles();
 
   $(".toaster").click(function() {
     if (isToasterLoaded) {
-      $(".pictureToast").animate({top: '0px'}, 200);
+      $(".pictureToast").animate({bottom: '-6px'}, 200);
       isToasterLoaded = false;
       serveMeWaffles();
     } else {
-      $(".pictureToast").animate({top: '800px'}, 200);
+      $(".pictureToast").animate({bottom: '-800px'}, 200);
       isToasterLoaded = true;
     };
   });

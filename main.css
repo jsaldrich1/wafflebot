@@ -2,23 +2,33 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F6FFED; }
-
-.superContainer {
-  grid-column: 3 / 7;
-  grid-row: 1 / 4;
-  width: 100%;
-  position: absolute;
-  height: 100%; }
+  background-color: #F6FFED;
+  overflow: hidden; }
 
 .everything {
   margin: 0 auto;
   width: auto;
-  max-width: 800px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 1fr 25px 1fr 25px 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
   position: relative; }
+
+header {
+  font-size: 4em;
+  font-family: "Quicksand", sans-serif;
+  color: rgba(42, 8, 3, 0.8);
+  text-align: center;
+  grid-column: 1 / 9;
+  grid-row: 3 / 4;
+  z-index: 99; }
+
+.superContainer {
+  grid-column: 3 / 7;
+  grid-row: 1 / 2;
+  width: 100%;
+  position: absolute;
+  height: 100%; }
 
 .pictureToast {
   position: absolute;
@@ -34,13 +44,12 @@ body {
   background-color: #F6FFED;
   height: 100%;
   width: 100%;
-  grid-row: 4 / 7;
+  grid-row: 2 / 5;
   position: absolute;
   z-index: -1; }
 
 .toaster {
   grid-column: 2 / 8;
-  grid-row: 4 / 5;
-  position: relative; }
+  grid-row: 2 / 3; }
 
 /*# sourceMappingURL=main.css.map */

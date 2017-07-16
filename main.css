@@ -10,8 +10,8 @@ body {
   width: auto;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr .5fr;
+  grid-template-rows: 1fr .25fr .25fr .25fr .25fr 1fr;
   position: relative; }
 
 header {
@@ -19,8 +19,8 @@ header {
   font-family: "Quicksand", sans-serif;
   color: rgba(42, 8, 3, 0.8);
   text-align: center;
-  grid-column: 1 / 9;
-  grid-row: 3 / 4;
+  grid-column: 1 / 10;
+  grid-row: 6 / 6;
   z-index: 99; }
 
 .superContainer {
@@ -44,12 +44,24 @@ header {
   background-color: #F6FFED;
   height: 100%;
   width: 100%;
-  grid-row: 2 / 5;
+  grid-row: 2 / 7;
   position: absolute;
   z-index: -1; }
 
 .toaster {
   grid-column: 2 / 8;
-  grid-row: 2 / 3; }
+  grid-row: 2 / 6;
+  z-index: 10; }
+
+.handle {
+  grid-column: 8 / 8;
+  grid-row: 4 / 4;
+  margin-left: -10px; }
+
+@keyframes handleUp {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(150px); } }
 
 /*# sourceMappingURL=main.css.map */

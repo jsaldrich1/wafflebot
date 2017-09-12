@@ -5,13 +5,18 @@ body {
   background-color: #F6FFED;
   overflow: hidden; }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
 .everything {
   margin: 0 auto;
   width: auto;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr .5fr;
-  grid-template-rows: 1fr .25fr .25fr .25fr .25fr 1fr;
+  grid-template-rows: 1fr .25fr .25fr .25fr .25fr;
   position: relative; }
 
 header {
@@ -19,8 +24,8 @@ header {
   font-family: "Quicksand", sans-serif;
   color: rgba(42, 8, 3, 0.8);
   text-align: center;
-  grid-column: 1 / 10;
-  grid-row: 6 / 6;
+  grid-column: 2 / 8;
+  grid-row: 3 / 3;
   z-index: 99; }
 
 .superContainer {

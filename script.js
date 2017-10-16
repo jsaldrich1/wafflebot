@@ -21,9 +21,9 @@ $(document).ready(function() {
       $(".toasterButton").animate({bottom: '100px'}, 100);
       isToasterLoaded = false;
       isHandleDown = false;
-      serveMeWaffles();
     } else if (isToasterLoaded && !isHandleDown) {
       $(".toasterButton").animate({bottom: '-100px'}, 300);
+      serveMeWaffles();
       isHandleDown = true;
     } else {
       $(".pictureToast").animate({bottom: '-800px'}, 200);

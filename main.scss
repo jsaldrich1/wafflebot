@@ -72,19 +72,22 @@ header {
   grid-column: 2 / 8;
   grid-row: 2 / 6;
   z-index: 10;
+  width: 100%;
 }
 
-.handle {
+#toasterContent {
+  width: 100%;
+}
+
+.toasterButton {
   grid-column: 8 / 8;
-  grid-row: 4 / 4;
-  margin-left: -10px;
+  grid-row: 3 / 3;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
 }
 
-@keyframes handleUp {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(150px)
-  }
+#toasterButtonID {
+  width: 100%;
 }
